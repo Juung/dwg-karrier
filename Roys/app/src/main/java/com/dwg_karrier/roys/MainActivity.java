@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     nav_user.setText(user);
     TextView nav_user_level = (TextView) hView.findViewById(R.id.nav_user_level);
     DataBaseOpenHelper dbhelper = new DataBaseOpenHelper(MainActivity.this);
-    user_level = "Lv. " + (dbhelper.getReadPageCount() / 12) + 1;
+    user_level = "Lv. " + (dbhelper.getReadPageCount() / 12 + 1);
     nav_user_level.setText(user_level);
     user_record = dbhelper.getReadPageCount() + " Pages";
     TextView nav_user_record = (TextView) hView.findViewById(R.id.nav_user_record);

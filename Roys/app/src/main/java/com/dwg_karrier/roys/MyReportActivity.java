@@ -91,7 +91,7 @@ public class MyReportActivity extends AppCompatActivity
     TextView textView = (TextView) findViewById(R.id.my_name);
     textView.setText(user);
     TextView levelView = (TextView) findViewById(R.id.my_level);
-    user_level = "Lv. " + dbhelper.getReadPageCount() / 12 + 1;
+    user_level = "Lv. " + (dbhelper.getReadPageCount() / 12 + 1);
     levelView.setText(user_level);
     // show my time zone
     layoutGraphView = (ViewGroup) findViewById(R.id.layout_graph_view);
